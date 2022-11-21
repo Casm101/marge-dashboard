@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && next export && docker build --pull --rm -f 'DockerFile' -t margedashboard:latest '.' && docker run -d -p 8080:8080 --name=margedashboard-1 margedashboard:latest"
   },
   "dependencies": {
     "@types/node": "18.11.9",

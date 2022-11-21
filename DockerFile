@@ -1,0 +1,30 @@
+
+# Stage 1: base
+FROM node:16-alpine as base
+
+# ARG GITHUB_TOKEN
+# ENV GITHUB_TOKEN $GITHUB_TOKEN
+
+WORKDIR /app
+# Stage 2
+FROM base as build
+
+# Copy everything for the build
+COPY ./ /app
+
+# RUN echo //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN >> ~/.npmrc
+# RUN echo @fathom3-dev:registry=https://npm.pkg.github.com/ >> ~/.npmrc
+
+RUN npm install
+RUN echo > ~/.npmrc
+RUN apk  update
+RUN apk  add rsync
+RUN npm run build
+
+FROM base as release
+
+COPY --from=build /app/out /app
+RUN npm install --global http-server
+
+EXPOSE 8080
+CMD ["http-server"]
