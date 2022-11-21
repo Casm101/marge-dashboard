@@ -10,12 +10,14 @@ export interface IService {
   name: string;
   info: string;
   url: string;
+  tag?: 'app' | 'ent' | 'game' | 'iot' | 'sys' | 'vms';
   status?: boolean | string | number;
 }
 
-export const Service = memo<IService>(({logo, name, info, url, status}) => {
+export const Service = memo<IService>(({logo, name, info, url, tag, status}) => {
 
   const [currentStatus, setCurrentStatus] = useState("false");
+  
 
   useEffect(() => {
     let checkServiceStatus = setInterval(async () => {
@@ -23,7 +25,7 @@ export const Service = memo<IService>(({logo, name, info, url, status}) => {
         const res = await fetch(url);
 
         // Remove this thing later
-        console.log(name, res);
+        //console.log(name, res);
         
         setCurrentStatus(res.ok.toString());
       }
@@ -36,7 +38,7 @@ export const Service = memo<IService>(({logo, name, info, url, status}) => {
 
   return (
     <Link href={url} target="_blank">
-      <Card>
+      <Card tag={tag}>
         <StyledServiceBody>
           <div className="serviceData">
             <img src={logo} alt="Service icon" />

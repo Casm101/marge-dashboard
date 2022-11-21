@@ -19,6 +19,7 @@ export const Category = memo<ICategory>(({icon, name, services}) => {
           name={service.name}
           info={service.info}
           url={service.url}
+          tag={service.tag}
           status={service.status}
           key={id}
         />

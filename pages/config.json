@@ -65,20 +65,28 @@
           ]
         },
         {
-          "name": "Plugins",
-          "icon": "🧩",
+          "name": "Home integration",
+          "icon": "🏠",
           "services": [
             {
-              "logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F02%2FUbuntu.png&f=1&nofb=1&ipt=be3bf94d1697cb900c631658ec73045c8b7a0ac74988b093a0ea647c2afea596&ipo=images",
-              "name": "Server Stats",
-              "info": "CPU Temp: 53ºC",
+              "logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-learn.adafruit.com%2Fguides%2Fimages%2F000%2F002%2F614%2Fmedium800%2F1000px-Home_Assistant_Logo.svg.png&f=1&nofb=1&ipt=964f49047d80167dac5d1f51c7ff498c38879228dbf13c856308fb7b03733619&ipo=images",
+              "name": "Home Assistant",
+              "info": "Home IoT service integration",
               "url": "",
-              "tag": "stat",
+              "tag": "iot",
               "status": "true"
             }
           ]
         }
       ]
+    },
+    {
+      "name": "Extra",
+      "url": "/extra",
+      "message": {
+        "title": "Welcome to Marge",
+        "subtitle": "This demo page shows an overview of Marge's capabilities. <br /> Feel free to click anywhere! Find more information on https://github.com/Casm101/marge-dashboard"
+      }
     }
   ]
 }
