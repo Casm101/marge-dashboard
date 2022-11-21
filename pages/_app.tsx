@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app';
 import { Navigation } from '../components';
 
 /* Import of user configuration */
-import DashboardConfig from "./config.json" assert { type: "json" };
+import DashboardConfig from "../config.json" assert { type: "json" };
 
 
 export default function App({ Component, pageProps }: AppProps) {
