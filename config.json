@@ -72,8 +72,24 @@
               "logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-learn.adafruit.com%2Fguides%2Fimages%2F000%2F002%2F614%2Fmedium800%2F1000px-Home_Assistant_Logo.svg.png&f=1&nofb=1&ipt=964f49047d80167dac5d1f51c7ff498c38879228dbf13c856308fb7b03733619&ipo=images",
               "name": "Home Assistant",
               "info": "Home IoT service integration",
-              "url": "",
+              "url": "http://192.168.0.28:8123/",
               "tag": "iot",
+              "status": "true"
+            },
+            {
+              "logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.icttipsandtricks.nl%2Fwp-content%2Fuploads%2F2017%2F12%2FGuacamole-logo.png&f=1&nofb=1&ipt=8043505281eff1243bce55b22ab59136e75fc63fa3031b47bb5275636abedab6&ipo=images",
+              "name": "Guacamole",
+              "info": "Remote desktop utility",
+              "url": "http://192.168.0.28:49156",
+              "tag": "app",
+              "status": "true"
+            },
+            {
+              "logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fr-spectrum.com.au%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2F2019-10%2FVodafone_logo-2017.png%3Fitok%3DUwlsEwCU&f=1&nofb=1&ipt=eee42db643b9b9c6e179c9027076298e4f3c01320bae0fd80ec9376998cf1cca&ipo=images",
+              "name": "Vodafone Router",
+              "info": "Link to home router",
+              "url": "http://192.168.0.1/",
+              "tag": "app",
               "status": "true"
             }
           ]
