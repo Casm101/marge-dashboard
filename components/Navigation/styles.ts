@@ -9,7 +9,7 @@ export const StyledNavigation = styled.header`
 
   position: fixed;
   top: 0;
-  z-index: 999999;
+  z-index: 1000;
 `;
 
 export const Header = styled.header`
