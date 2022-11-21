@@ -15,12 +15,28 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+
+html {
+  color-scheme: dark;
+}
+body {
+  color: white;
+  background: #131313;
+}
+
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12.5%;
+}
+
+.pageSection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  padding: 0 12.5% 0 12.5%;
 }
