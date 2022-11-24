@@ -26,5 +26,5 @@ FROM base as release
 COPY --from=build /app/out /app
 RUN npm install --global http-server
 
-EXPOSE 8080
+EXPOSE 80
 CMD ["http-server"]
