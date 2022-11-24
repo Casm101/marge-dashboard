@@ -29,14 +29,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 12.5%;
+  margin-top: 200px;
+  margin-bottom: 100px;
 }
 
 .pageSection {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  width: 100%;
-  padding: 0 12.5% 0 12.5%;
+  max-width: 1400px;
+  padding: 0 50px;
+
 }
