@@ -30,6 +30,7 @@ export const StyledServiceBody = styled.div`
     .serviceInfo {
       margin: .25rem 0;
       font-weight: 300;
+      text-overflow: ellipsis; 
     }
   }
 
